@@ -12,7 +12,7 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addApointment(name, time, description));
+    dispatch(addAppointment(name, time, description));
     setName('');
     setTime('');
     setDescription('');
