@@ -43,11 +43,13 @@ const App = () => {
         </thead>
         <tbody>
             {/* Appointment HTML */}
-            <tr>
-              <td>appointmentName</td>
-              <td>appointmentTime</td>
-              <td>appointmentDescription</td>
+            {appointments.map((appointment, index) => (
+            <tr key={index}>
+              <td>{appointment.name}</td>
+              <td>{appointment.time}</td>
+              <td>{appointment.description}</td>
             </tr>
+          ))}
         </tbody>
       </table>
     </div>
